@@ -13,7 +13,7 @@ class Timer:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.final = datetime.now()
-        self.delta = self.final - self.start
+        self.delta = (self.final - self.start).total_seconds()
 
 
 if __name__ == '__main__':
