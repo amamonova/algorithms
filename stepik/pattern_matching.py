@@ -20,7 +20,7 @@ def rabin_karp_algorithm(text, pattern):
             text_hash = (text_hash - h * ord(text[seq])) % p
             text_hash = (text_hash * x + ord(text[seq+pattern_len])) % p
             text_hash = (text_hash + p) % p
-            
+
     return result
 
 
